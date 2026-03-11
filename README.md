@@ -24,6 +24,11 @@ https://podkop.net/
 sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/main/install.sh)
 ```
 
+И скрипт для авто восстановления после падений:
+```
+sh <(wget -O - https://raw.githubusercontent.com/nodax-hub/podkop/refs/heads/main/install_podkop_watchdog.sh)
+```
+
 ## Изменения 0.7.0
 Начиная с версии 0.7.0 изменена структура конфига `/etc/config/podkop`. Старые значения несовместимы с новыми. Нужно заново настроить Podkop.
 
