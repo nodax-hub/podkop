@@ -124,10 +124,13 @@ echo "[4/5] Enabling service..."
 
 /etc/init.d/podkop-watchdog enable
 
-
 echo "[5/5] Starting service..."
 
-/etc/init.d/podkop-watchdog restart
+if /etc/init.d/podkop-watchdog start; then
+    echo "Service started"
+else
+    echo "Warning: service start returned error"
+fi
 
 sleep 2
 
